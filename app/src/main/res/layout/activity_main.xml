@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gif"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginHorizontal="16dp"
+        android:hint="EMAIL:"
+        android:padding="7dp"
+        android:background="@color/teal_200"
+        android:fontFamily="sans-serif-black"
+        android:textFontWeight="1000"
+        style="EditTextStyle"
+        android:inputType="textEmailAddress"
+        android:textAlignment="textStart"/>
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:padding="7dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-black"
+        android:background="@color/teal_200"
+        android:textFontWeight="1000"
+        style="EditTextStyle"
+        android:inputType="textPassword"
+        android:hint="PASSWORD:"/>
+
+    <Button
+        android:id="@+id/goButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="GO"
+        android:padding="4dp"
+        android:backgroundTint="#E53935"
+        android:onClick="goClicked"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        tools:ignore="OnClick,UsingOnClickInXml" />
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
